@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+ using namespace std;
+ 
+struct ficha {
+    string nome; string endereco;
+    int idade;
+    float salario;
+};
+
+int main() {
+    ficha funcionario;
+    cout << "Informe o nome do funcionario: \n";
+    cin >> funcionario.nome;
+    cout << "Informe o endereco: \n";
+    cin >> funcionario.endereco;
+    cout << "Informe a idade: \n";
+    cin >> funcionario.idade;
+    cout << "Informe o salario: \n";
+    cin >> funcionario.salario;
+    cout << "\n O nomе е: " << funcionario.nome;
+}
