@@ -1,0 +1,33 @@
+/******************************************************************************
+Defina uma estrutura que irá representar bandas de música. Essa estrutura deve ter o
+nome da banda, que tipo de música ela toca, o número de integrantes e em que posição
+do ranking essa banda está dentre as suas 5 bandas favoritas
+*******************************************************************************/
+#include <iostream>
+#include <string>
+ using namespace std;
+ 
+struct bandas {
+    string nome; 
+    string genero;
+    int integrantes;
+    int ranking;
+};
+
+int main() {
+    bandas infos;
+    cout << "Informe o nome da banda: \n";
+    cin >> infos.nome;
+    cout << "Informe o genero: \n";
+    cin >> infos.genero;
+    cout << "Informe o número de integrantes: \n";
+    cin >> infos.integrantes;
+    cout << "Informe a posição do ranking: \n";
+    cin >> infos.ranking;
+    
+    cout << "\nBANDAS CADASTRADAS";
+    cout << "\nNome \t Genero \t Nº Integrantes \t Ranking \n" << "==================================================================\n";
+    
+    cout << infos.nome << "\t" << infos.genero << "\t" << infos.integrantes << "\t" << infos.ranking;
+    
+}
