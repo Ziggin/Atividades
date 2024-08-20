@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+struct no {
+    int valor;
+    struct no *proximo;
+};
+
+
+int main()
+{
+    no *cabeca;
+    cabeca = (no *)malloc(sizeof(no));
+    cabeca->valor = 10;
+    cabeca->proximo = (no *)malloc(sizeof(no));
+    cabeca->proximo->valor = 20;
+    cabeca->proximo->proximo = (no *)malloc(sizeof(no));
+    cabeca->proximo->proximo->valor = 30;
+    
+    cout << cabeca->valor << " " << cabeca->proximo->valor << " " << cabeca->proximo->proximo->valor;
+
+    
+
+
+    return 0;
+}
